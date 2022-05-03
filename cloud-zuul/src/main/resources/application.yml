@@ -1,16 +1,14 @@
-# 应用名称
 server:
-  port: 9000
+  port: 9003
 spring:
   application:
-    name: api-passenger
+    name: cloud-zuul
 eureka:
   client:
-    # eureka client 功能开关
-#    enabled: false
+    enabled: true
     service-url:
       #注意，生产中如果配置集群，则集群地址顺序要打乱，因为拉取注册表只从第一个地址拉取
-      defaultZone: http://eureka-7900:7900/eureka
+      defaultZone: http://localhost:7900/eureka
     # 拉取注册表间隔时间
     registry-fetch-interval-seconds: 30
   instance:

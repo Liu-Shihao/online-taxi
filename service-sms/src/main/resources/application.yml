@@ -1,0 +1,36 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-sms
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/online-taxi?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+#    dbcp2:
+#      initial-size: 5
+#      min-idle: 5
+#      max-total: 5
+#      max-wait-millis: 200
+#      validation-query: SELECT 1
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+eureka:
+  client:
+    # eureka client 功能开关
+#    enabled: false
+    service-url:
+      #注意，生产中如果配置集群，则集群地址顺序要打乱，因为拉取注册表只从第一个地址拉取
+      defaultZone: http://eureka-7900:7900/eureka
+    # 拉取注册表间隔时间
+    registry-fetch-interval-seconds: 30
+  instance:
+    # 心跳间隔时间（续约时间，即：client发送心跳，server对该服务续约） 默认30
+    lease-renewal-interval-in-seconds: 30

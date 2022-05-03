@@ -1,12 +1,12 @@
-# 应用名称
 server:
-  port: 9000
+  port: 9002
 spring:
   application:
-    name: api-passenger
+    name: service-verification-code
+  redis:
+    host: 172.16.98.100
 eureka:
   client:
-    # eureka client 功能开关
 #    enabled: false
     service-url:
       #注意，生产中如果配置集群，则集群地址顺序要打乱，因为拉取注册表只从第一个地址拉取

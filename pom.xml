@@ -27,6 +27,11 @@
     <modules>
         <module>cloud-eureka</module>
         <module>api-passenger</module>
+        <module>service-verification-code</module>
+        <module>service-sms</module>
+        <module>internal-common</module>
+        <module>service-passenger-user</module>
+        <module>cloud-zuul</module>
     </modules>
 
 
