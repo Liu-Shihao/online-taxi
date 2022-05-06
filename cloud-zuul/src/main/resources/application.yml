@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: cloud-zuul
+  redis:
+    host: 172.16.98.100
 eureka:
   client:
     enabled: true
@@ -14,3 +16,6 @@ eureka:
   instance:
     # 心跳间隔时间（续约时间，即：client发送心跳，server对该服务续约） 默认30
     lease-renewal-interval-in-seconds: 30
+zuul:
+  # 将zuul.sensitive-headers置为空即可将 "Cookie", "Set-Cookie", "Authorization"、token、等信息想下游传递
+  sensitive-headers:

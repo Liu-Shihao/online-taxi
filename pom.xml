@@ -32,6 +32,10 @@
         <module>internal-common</module>
         <module>service-passenger-user</module>
         <module>cloud-zuul</module>
+        <module>service-valuation</module>
+        <module>service-order</module>
+        <module>api-listen-order</module>
+        <module>service-pay</module>
     </modules>
 
 

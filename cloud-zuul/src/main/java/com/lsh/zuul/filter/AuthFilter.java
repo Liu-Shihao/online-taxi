@@ -12,7 +12,6 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -21,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
  * @date ：Created in 2022/5/3 4:02 下午
  * @desc ：鉴权过滤
  */
-@Component
+//@Component
 public class AuthFilter extends ZuulFilter {
 
     @Autowired
@@ -31,21 +30,6 @@ public class AuthFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
-        //获取上下文
-        RequestContext requestContext = RequestContext.getCurrentContext();
-        HttpServletRequest request = requestContext.getRequest();
-
-//		String uri = request.getRequestURI();
-//		System.out.println("来源uri："+uri);
-//		//只有此接口/api-passenger/api-passenger-gateway-test/hello才被拦截
-//		String checkUri = "/api-passenger/api-passenger-gateway-test/hello";
-//		if(checkUri.equalsIgnoreCase(uri)) {
-//			return true;
-//		}
-////		 测试路径
-//		if(uri.contains("api-driver")) {
-//			return true;
-//		}
 
         return true;
     }

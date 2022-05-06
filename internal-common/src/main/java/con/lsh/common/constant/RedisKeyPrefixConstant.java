@@ -1,11 +1,8 @@
 package con.lsh.common.constant;
 
 /**
- * @author ：LiuShihao
- * @date ：Created in 2022/5/3 3:41 下午
- * @desc ：
+ * @author yueyi2019
  */
-
 public class RedisKeyPrefixConstant {
 	/**
 	 * 乘客登录验证码 key前缀

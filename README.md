@@ -10,7 +10,8 @@ service-verification-code| 验证码服务|9001
 service-sms|短信服务|9002
 cloud-zuul|网关服务|9003|
 service-passenger-user|乘客端业务模块|9004|
-
+service-valuation|计价服务|9005|
+api-listen-order|派单服务|9006|
 
 
 

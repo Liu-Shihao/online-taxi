@@ -3,9 +3,7 @@ package con.lsh.common.constant;
 import lombok.Getter;
 
 /**
- * @author ：LiuShihao
- * @date ：Created in 2022/5/3 3:41 下午
- * @desc ：
+ * @author yueyi2019
  */
 public enum CommonStatusEnum {
 	

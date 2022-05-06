@@ -1,9 +1,7 @@
 package con.lsh.common.constant;
 
 /**
- * @author ：LiuShihao
- * @date ：Created in 2022/5/3 3:41 下午
- * @desc ：
+ * @author 13999
  */
 public class IdentityConstant {
     /**
